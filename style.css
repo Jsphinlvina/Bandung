@@ -1,0 +1,263 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: 'Work Sans', sans-serif;
+   color: #fff;
+}
+
+/* ======================= */
+/* NAVIGASI */
+/* ======================= */
+
+.main-nav {
+   display: flex;
+   background-color: #684929;
+   justify-content: space-between;
+   height: 55px;
+   align-items: center;
+   padding: 0 50px;
+   top: 0;
+   position: sticky;
+   z-index: 999;
+}
+
+.logo-nav {
+   font-size: 20px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+
+.ul-nav {
+   display: flex;
+   list-style: none;
+   width: 40%;
+   justify-content: end;
+}
+
+.ul-nav li:not(:last-child) {
+   margin-right: 30px;
+}
+
+.ul-nav a:link,
+.ul-nav a:visited {
+   color: #eee;
+   text-decoration: none;
+   padding: 10px;
+   border-radius: 30px;
+}
+
+.ul-nav a:hover,
+.ul-nav a:active {
+   background-color: #866d54;
+}
+
+/* ======================= */
+/* HOME */
+/* ======================= */
+
+.home-section {
+   height: 570px;
+   background-color: #684929;
+   display: flex;
+   padding: 26px;
+}
+
+.img-utama {
+   width: 446px;
+   margin: 10px 50px;
+   border-radius: 30px;
+}
+
+.title {
+   font-size: 50px;
+   margin-top: 150px;
+}
+
+.intro {
+   padding: 50px 100px 0px 0px;
+   text-align: justify;
+   line-height: 30px;
+}
+
+/* ======================= */
+/* DESTINATION */
+/* ======================= */
+
+.destination-section {
+   height: 570px;
+   background-color: #fff;
+   color: #3e2c19;
+   padding: 48px;
+}
+
+/* Image */
+
+.container-heading {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   font-size: 30px;
+   margin-bottom: 48px;
+}
+
+.container-card {
+   display: flex;
+   justify-content: center;
+}
+
+.hover-img {
+   background-color: #000;
+   color: #fff;
+   display: inline-block;
+   margin: 8px;
+   height: 300px;
+   max-width: 320px;
+   min-width: 240px;
+   overflow: hidden;
+   position: relative;
+   width: 100%;
+}
+
+.hover-img * {
+   transition: all 0.45s ease;
+}
+
+.hover-img:before,
+.hover-img:after {
+   background-color: rgba(0, 0, 0, 0.5);
+   border-top: 32px solid rgba(0, 0, 0, 0.5);
+   border-bottom: 32px solid rgba(0, 0, 0, 0.5);
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   content: '';
+   transition: all 0.3s ease;
+   z-index: 1;
+   opacity: 0;
+   transform: scaleY(2);
+}
+
+.hover-img img {
+   vertical-align: top;
+   max-width: 100%;
+   backface-visibility: hidden;
+}
+
+.hover-img figcaption {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   text-align: left;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   line-height: 1.1em;
+   opacity: 0;
+   z-index: 2;
+   transition-delay: 0.1s;
+   font-size: 12px;
+   font-weight: 400;
+   letter-spacing: 1px;
+   padding: 30px;
+}
+
+.hover-img:hover:before,
+.hover-img:hover:after {
+   transform: scale(1);
+   opacity: 1;
+}
+
+.hover-img:hover > img {
+   opacity: 0.7;
+}
+
+.hover-img:hover figcaption {
+   opacity: 1;
+}
+
+.taman-img {
+   height: 500px;
+}
+
+.sub-title {
+   font-size: 20px;
+}
+
+/* ======================= */
+/* CULINARY */
+/* ======================= */
+
+.culinary-section {
+   height: 1050px;
+   background-color: #a4927f;
+}
+
+.container-culinary {
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.culinary-heading {
+   color: #eee;
+   display: flex;
+   font-size: 70px;
+   padding: 40px 50px 0px 50px;
+}
+
+.culinary-title {
+   font-size: 40px;
+   padding: 50px;
+}
+
+.culinary-explanation {
+   text-align: justify;
+   padding: 0px 50px 0px 50px;
+   display: flex;
+}
+
+.culinary-seblak {
+   width: 1000px;
+   border-radius: 20px;
+   margin-right: 50px;
+   margin-top: 60px;
+}
+
+.culinary-mie {
+   width: 800px;
+   border-radius: 20px;
+   margin-left: 50px;
+   margin-top: 70px;
+}
+
+.culinary-karedok {
+   width: 1200px;
+   border-radius: 20px;
+   margin-top: 40px;
+   margin-right: 50px;
+}
+
+/* ======================= */
+/* FOOTER */
+/* ======================= */
+
+.footer {
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #3e2c19;
+}
